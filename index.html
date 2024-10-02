@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+<head>
+    <title>Jogo quiz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Questão 1</h2>
+<p id="demo">Quando vai ser a primeira Av1</p>
+
+
+<form>
+  <input type="radio" id="Alternativa1" name="Pergunta1" value="Data 1">
+  <label for="html">08/10</label><br>
+  <input type="radio" id="alternativa2" name="Pergunta1" value="Data 2">
+  <label for="css">12/10</label><br>
+  <input type="radio" id="Alternativa3" name="Pergunta1" value="Data 3">
+  <label for="javascript">15/10</label>
+</form><br>
+
+
+<script>
+
+  function OpcaoEscolhida(){
+     const  OpcaoEscolhida = document.querySelector('input[name="Pergunta1"]:checked');
+     const RespostaCerta = "Data 3"
+
+ if (OpcaoEscolhida.value == RespostaCerta){
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+    window.location.href='pagina2.html';
+    alert("Parabens você acertou")
+ }
+
+    else {
+        alert ("Errou");
+    }
+
+ }
+  
+    </script>
+    <br>
+    <button type="button" onclick="OpcaoEscolhida()">Responder</button><br>
+
+
+<footer>✉Email para contato:"felipekennedy990@gmail.com<br></footer>
+</body>
+</html>
